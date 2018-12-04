@@ -1,0 +1,35 @@
+{
+  "name": "moods",
+  "plural": "moods",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "mood": {
+      "type": "number",
+      "required": true
+    },
+    "feelings": {
+      "type": [
+        "string"
+      ]
+    },
+    "comments": {
+      "type": "string"
+    },
+    "user": {
+      "type": "any",
+      "required": true
+    },
+    "rgDate": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
